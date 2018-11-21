@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8640231171e874e9c11b1550316818, type: 3}
+  m_Name: EnemyFollowPathBhv
+  m_EditorClassIdentifier: 
+  pathList: {fileID: 11400000, guid: c6a2eaa61e1601a4b83e40377d9a9254, type: 2}
+  reachedExitEvent: {fileID: 11400000, guid: 8607c24b811663d478e5b796ff81794b, type: 2}
+  StartPosition: 0
