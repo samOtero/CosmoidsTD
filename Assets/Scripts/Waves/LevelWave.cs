@@ -10,8 +10,8 @@ public class LevelWave : MonoBehaviour {
     public int currentWaveNum;
     public int totalWaves;
     public int currentStep;
-    public int waveCounter;
-    public int waveInitialCooldown;
+    public float waveCounter;
+    public float waveInitialCooldown;
     public bool forceStartWave;
     public int groupSpawnCounter;
     public bool finished;
@@ -32,7 +32,7 @@ public class LevelWave : MonoBehaviour {
 
         if (waveCounter > 0 && forceStartWave == false)
         {
-            waveCounter--;
+            waveCounter -= Time.deltaTime;
             return;
         }
 
@@ -61,6 +61,7 @@ public class LevelWave : MonoBehaviour {
             if (groupSpawnCounter == 0)
             {
                 currentStep++;
+                waveCounter = waveGroup.timeAfterGroup;
             }
         }
         else

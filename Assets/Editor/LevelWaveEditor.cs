@@ -25,10 +25,13 @@ public class LevelWaveEditor :Editor {
                 new Rect(rect.x, rect.y + EditorGUIUtility.singleLineHeight * 2, 400, EditorGUIUtility.singleLineHeight), element.FindPropertyRelative("timeBetweenSpawns"), new GUIContent("Time Between: ")
                 );
             EditorGUI.PropertyField(
-                new Rect(rect.x, rect.y + EditorGUIUtility.singleLineHeight * 3, 400, EditorGUIUtility.singleLineHeight), element.FindPropertyRelative("numToSpawn"), new GUIContent("Amount to Spawn: "), true
+                new Rect(rect.x, rect.y + EditorGUIUtility.singleLineHeight * 3, 400, EditorGUIUtility.singleLineHeight), element.FindPropertyRelative("timeAfterGroup"), new GUIContent("Time After: ")
                 );
             EditorGUI.PropertyField(
-                new Rect(rect.x, rect.y + EditorGUIUtility.singleLineHeight * 4, 400, EditorGUIUtility.singleLineHeight), element.FindPropertyRelative("stepList"), new GUIContent("Steps: "), true
+                new Rect(rect.x, rect.y + EditorGUIUtility.singleLineHeight * 4, 400, EditorGUIUtility.singleLineHeight), element.FindPropertyRelative("numToSpawn"), new GUIContent("Amount to Spawn: "), true
+                );
+            EditorGUI.PropertyField(
+                new Rect(rect.x, rect.y + EditorGUIUtility.singleLineHeight * 5, 400, EditorGUIUtility.singleLineHeight), element.FindPropertyRelative("stepList"), new GUIContent("Steps: "), true
                 );
         };
         waveGroup1.drawHeaderCallback = (Rect rect) => {

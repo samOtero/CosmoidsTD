@@ -312,11 +312,7 @@ MonoBehaviour:
     phaseCooldown: 0
     phase: 0
     ability: {fileID: 0}
-  abilities:
-  - currentCooldown: 0
-    phaseCooldown: 0
-    phase: 0
-    ability: {fileID: 11400000, guid: b1ac7ba6165c64b489867eae3c42f60a, type: 2}
+  abilities: []
   selectedAbilityIndex: 0
   marker: {fileID: 0}
   heldItem: {fileID: 0}

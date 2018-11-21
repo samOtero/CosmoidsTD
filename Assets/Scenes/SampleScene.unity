@@ -285,7 +285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caef8eeb6bb806849822cd5b09499122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawnCount: 0
   selectedHero: {fileID: 0}
 --- !u!1001 &473224394
 Prefab:
@@ -690,7 +689,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 799030451}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.16, y: 0.55, z: 0}
+  m_LocalPosition: {x: -9.51, y: -4.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -842,7 +841,15 @@ MonoBehaviour:
     stepList: 00000000
     unitPrefab: {fileID: 114365374592542464, guid: 7a934b10f4e9bae488ea74676b8d5ecb,
       type: 2}
-    timeBetweenSpawns: 1000
+    timeBetweenSpawns: 2
+    timeAfterGroup: 5
+    numToSpawn: 3
+  - waveNum: 1
+    stepList: 01000000
+    unitPrefab: {fileID: 114365374592542464, guid: 7a934b10f4e9bae488ea74676b8d5ecb,
+      type: 2}
+    timeBetweenSpawns: 2
+    timeAfterGroup: 5
     numToSpawn: 5
   currentWaveNum: 1
   totalWaves: 1
@@ -857,6 +864,7 @@ MonoBehaviour:
     stepList: 
     unitPrefab: {fileID: 0}
     timeBetweenSpawns: 0
+    timeAfterGroup: 0
     numToSpawn: 0
 --- !u!4 &1589163071
 Transform:

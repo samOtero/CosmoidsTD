@@ -9,6 +9,7 @@ public class WaveGroup {
     public int waveNum;
     public List<int> stepList;
     public unit unitPrefab;
-    public int timeBetweenSpawns;
+    public float timeBetweenSpawns;
+    public float timeAfterGroup;
     public int numToSpawn;
 }
